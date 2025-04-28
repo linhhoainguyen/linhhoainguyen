@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #fff;
+    color: #111;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+header {
+    padding: 1.2rem 0 0.7rem 0;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+}
+
+.header-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav-left .logo {
+    font-size: 1.08rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #111;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+}
+
+.nav-right {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    font-size: 0.93rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    transition: opacity 0.2s;
+}
+
+.nav-right a:hover {
+    opacity: 0.6;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+}
+
+.hero {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 0;
+    margin-right: 2rem;
+    margin-bottom: 0;
+    box-shadow: none;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1.1rem;
+    color: #111;
+    margin-top: 0;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.intro, .research-focus {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 0.7rem;
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 1.2rem;
+    margin-top: 2.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #111;
+    margin: 1.2rem 0 0.7rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.publications ol {
+    list-style-position: inside;
+    margin-left: 0.5rem;
+}
+
+.publications li {
+    margin-bottom: 1.1rem;
+    line-height: 1.6;
+    font-size: 0.98rem;
+}
+
+.publications a, .contact a {
+    color: #111;
+    text-decoration: underline;
+    border: none;
+    transition: opacity 0.2s;
+}
+
+.publications a:hover, .contact a:hover {
+    opacity: 0.6;
+}
+
+.work-in-progress ul {
+    list-style-position: inside;
+    margin-left: 0.5rem;
+}
+
+.work-in-progress li {
+    margin-bottom: 0.7rem;
+    font-size: 0.98rem;
+}
+
+.teaching ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.teaching li {
+    margin-bottom: 0.7rem;
+    padding-left: 1rem;
+    position: relative;
+    font-size: 0.98rem;
+}
+
+.teaching li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #bbb;
+}
+
+.contact {
+    margin-top: 2.5rem;
+}
+
+footer {
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    margin-top: 2.5rem;
+    border-top: 1px solid #e5e5e5;
+    font-size: 0.95rem;
+    color: #888;
+}
+
+@media (max-width: 900px) {
+    main {
+        padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+    }
+    .header-inner {
+        padding: 0 0.5rem;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .profile-photo {
+        width: 90px;
+        height: 90px;
+        margin-right: 0;
+        margin-bottom: 1.2rem;
+    }
+    .nav-left .logo, nav {
+        margin-left: 0.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 0;
+    }
+    .profile-photo {
+        width: 60px;
+        height: 60px;
+    }
+    .hero h1 {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 0.95rem;
+    }
+} 
